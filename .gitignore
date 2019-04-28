@@ -4,3 +4,10 @@
 /stringCompare.class
 /substringFunc.class
 /trimFunc.class
+/splitFunc.class
+/toLowerCaseFunc.class
+/toUpperCaseFunc.class
+/ArrayscopyOf.class
+/Arraysfill.class
+/Arrayssort.class
+/array.class
