@@ -40,14 +40,14 @@ public class javaMysql {
 
 			ResultSet result = statement.executeQuery(sql);
 
-			String title, article;
+			String title, source;
 			//遍历结果集
 			while (result.next()) {
 
 				title = result.getString("title");
-				article = result.getString("article");
+				source = result.getString("source");
 
-				System.out.println("title:" + title + "article:" + article);
+				System.out.println("title:" + title + "source:" + source);
 
 			}
 
