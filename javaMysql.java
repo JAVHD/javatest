@@ -56,6 +56,7 @@ public class javaMysql {
 			conn.close();
 
 		} catch (Exception e) {
+			//System.out.println()
 			System.out.println(e.getMessage());
 			e.printStackTrace();
 		}
