@@ -2,7 +2,7 @@
 * @Author: bear
 * @Date:   2019-09-03 09:59:17
 * @Last Modified by:   bear
-* @Last Modified time: 2019-09-03 10:11:26
+* @Last Modified time: 2019-09-03 10:13:09
 */
 
 import java.util.Date;
@@ -18,6 +18,7 @@ public class timeToDate {
 
 		System.out.println("time " + time);
 		System.out.println("date " + date);
+
 	}
 
 }
