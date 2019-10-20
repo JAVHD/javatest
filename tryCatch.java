@@ -2,7 +2,7 @@
 * @Author: bear
 * @Date:   2019-05-19 22:26:01
 * @Last Modified by:   bear
-* @Last Modified time: 2019-09-09 14:37:19
+* @Last Modified time: 2019-10-14 17:40:03
 */
 
 
@@ -12,7 +12,7 @@ public class tryCatch {
 
 		int a, b, c;
 		a = 5;
-		b = 0;
+		b = 1;
 
 		try {
 			c = a / b;
