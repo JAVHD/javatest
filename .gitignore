@@ -1,4 +1,5 @@
 .idea/
+*.class
 /HelloWorld.class
 /charAtFunc.class
 /indexOfFunc.class
