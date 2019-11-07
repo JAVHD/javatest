@@ -5,27 +5,28 @@
 * @Last Modified time: 2019-11-07 10:29:15
 */
 
-public class RunnableThread implements Runnable {
+public class RunnableThread {
 
 	public int count = 0;
 
-	@Override
-	public void run() {
-		doCount();
-	}
+	public class RunnableImplements implements Runnable {
+		@Override
+		public void run() {
+			doCount();
+		}
 
-	public void doCount() {
-		//this.count =
-		for (int i = 0; i < 20; i++) {
-			count++;
-			System.out.println(count);
+		public void doCount() {
+			for (int i = 0; i < 20; i++) {
+				count++;
+				System.out.println(count);
+			}
 		}
 	}
 
 	public static void main(String[] args) {
 
 		//多线程执行
-		Runnable runnable1 = new RunnableThread();
+		//Runnable runnable1 = new RunnableThread();
 		//Runnable runnable2 = new RunnableThread();
 
 //		Thread thread1 = new Thread(runnable1);
@@ -34,9 +35,11 @@ public class RunnableThread implements Runnable {
 //		thread1.start();
 //		thread2.start();
 
+		RunnableImplements runnableImplements = new RunnableThread.new RunnableImplements();
+
 		for (int i = 0; i < 2; i++) {
-			Thread thread1 = new Thread(runnable1);
-			thread1.start();
+			Thread thread = new Thread(runnableImplements);
+			thread.start();
 		}
 
 
