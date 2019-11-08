@@ -10,10 +10,37 @@
 public class ConstructTest {
 	public static void main(String[] args) {
 
-		Construct construct = new Construct("bear");
+		Construct construct = new ConstructTest().new Construct("bear");
 		System.out.println(construct.getName());
 
-		Construct constructAge = new Construct(18);
+		Construct constructAge = new ConstructTest().new Construct(18);
 		System.out.println(constructAge.getAge());
+	}
+
+	//内部类
+	public class Construct {
+
+		private String name;
+		private Integer age;
+
+		//构造函数不允许有返回值
+		public Construct(String name) {
+			this.name = name;
+			//return this.name;
+		}
+
+		public Construct(Integer age) {
+			this.age = age;
+		}
+
+		public String getName() {
+			return name;
+		}
+
+		public Integer getAge() {
+			return age;
+		}
+
+
 	}
 }

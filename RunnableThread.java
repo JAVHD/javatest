@@ -37,6 +37,9 @@ public class RunnableThread {
 
 		RunnableImplements runnableImplements = new RunnableThread(). new RunnableImplements();
 
+		//RunnableImplements runnableImplements = new RunnableImplements();
+
+
 		for (int i = 0; i < 2; i++) {
 			Thread thread = new Thread(runnableImplements);
 			thread.start();

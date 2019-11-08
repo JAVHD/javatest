@@ -9,18 +9,18 @@ public class ByteType {
 
 	public static void main(String[] args) {
 
-		// byte a = 127;
-		// byte b = 128;
-
-		// System.out.println(a);
-		// System.out.println(b);
+//		 byte a = 127;
+//		 //byte b = 128;
+//
+//		 System.out.println(a);
+//		 //System.out.println(b);
 
 		int a = 128;
 		byte b;
 
 		b = (byte)a;
 
-		System.out.println(b);
+		System.out.println(b); //-128
 
 	}
 

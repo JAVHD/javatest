@@ -7,8 +7,9 @@
 
 public class ClassInClass {
 	public static void main(String[] args) {
-		//InClass inclass = new InClass();
-		System.out.println(InClass.sayHello());
+
+		//System.out.println(InClass.sayHello());
+        System.out.println(new InClass().sayHello());
 	}
 
 
