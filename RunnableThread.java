@@ -15,7 +15,7 @@ public class RunnableThread {
 			doCount();
 		}
 
-		public void doCount() {
+		public synchronized void doCount() {
 			for (int i = 0; i < 20; i++) {
 				count++;
 				System.out.println(count);
@@ -38,7 +38,7 @@ public class RunnableThread {
 		RunnableImplements runnableImplements = new RunnableThread(). new RunnableImplements();
 
 		//RunnableImplements runnableImplements = new RunnableImplements();
-
+		//Thread thread = new Thread(runnableImplements);
 
 		for (int i = 0; i < 2; i++) {
 			Thread thread = new Thread(runnableImplements);
