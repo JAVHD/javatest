@@ -17,6 +17,7 @@ public class OverrideTest {
 	}
 
 	static class bclass extends aclass {
+		@Override //声明重写，便于编译器检查
 		public static String sayHello() {
 			return "Hello";
 		}
