@@ -11,7 +11,11 @@ public class LocalDateTimeTest {
 	public static void main(String[] args) {
 
 		LocalDateTime ldt = LocalDateTime.now();
+		System.out.println(ldt); //2020-01-07T15:17:20.917
 
-		System.out.println(ldt);
+		LocalDateTime ldt1 = LocalDateTime.of(2019, 1, 7, 20, 45, 5);
+		System.out.println(ldt1); //2019-01-07T20:45:05
+
+
 	}
 }
