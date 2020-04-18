@@ -34,6 +34,12 @@ public class equalsFunc {
 		System.out.println(s1.equals(s2)); //true
 		System.out.println(o1.equals(o2)); //false
 
+		//
+		Object1 object1 = new Object1();
+		Object2 object2 = new Object2();
+		System.out.println(object1 == object2); //== 用于基本类型比较
+		System.out.println(object1.equals(object2));
+
 
 
 	}
@@ -43,3 +49,13 @@ public class equalsFunc {
 class obj {
 
 }
+
+class Object1 {
+	public Integer age;
+}
+
+class Object2 {
+	public Integer age;
+}
+
+
