@@ -40,6 +40,8 @@ public class equalsFunc {
 		System.out.println(object1 == object2); //== 用于基本类型比较
 		System.out.println(object1.equals(object2));
 
+		//int level = 5;
+
 
 
 	}
