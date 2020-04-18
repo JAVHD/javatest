@@ -7,7 +7,7 @@
 
 public class StaticFunc {
 	public static void main(String[] args) {
-		System.out.println(sayHello());
+		System.out.println(sayHello()); // 错误: 无法从静态上下文中引用非静态 方法
 	}
 
 	public String sayHello() {
