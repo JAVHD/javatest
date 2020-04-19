@@ -5,7 +5,7 @@ public class finalTest {
     }
 
     public static class ClassA {
-        public static final int age = 18; //不可被重写
+        public static final int age = 18; //final不可被重写
 
         public static int getAge() {
             return age;
