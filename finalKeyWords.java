@@ -14,6 +14,7 @@ public class finalKeywords {
 
 		name = "wang"; //错误: 无法为最终变量name分配值
 
+
 		System.out.println(name);
 
 
