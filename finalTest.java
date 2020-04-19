@@ -4,6 +4,9 @@ public class finalTest {
         System.out.println(ClassB.getAge());
         System.out.println(ClassB.getInch());
 
+        ClassD classD = new ClassD();
+        System.out.println(classD.getAge());
+
     }
 
     public static class ClassA {
@@ -29,4 +32,24 @@ public class finalTest {
 //        }
     }
 
+}
+
+class ClassC {
+    public int age = 18;
+
+    public ClassC() {
+        System.out.println("construct:ClassC()");
+    }
+
+    public int getAge() {
+        return age;
+    }
+
+}
+
+class ClassD extends ClassC {
+    public ClassD() {
+        System.out.println("construct:ClassD()");
+    }
+    public int age = 30;
 }
