@@ -11,6 +11,7 @@ public class InterfaceConst {
 	}
 }
 
+
 interface CommonConst {
  	Integer IS_DELETE_YES = 1; //未删除
  	Integer IS_DELETE_NO = 2; //已删除
