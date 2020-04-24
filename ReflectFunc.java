@@ -1,10 +1,11 @@
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
+import java.lang.reflect.InvocationTargetException;
 
 public class ReflectFunc {
-    public static void main(String[] args) {
+    public static void main(String[] args) throws IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException {
         Class<?> cl = A.class;
-        //A a = cl.newInstance();
+        Object obj = cl.newInstance();
         Method[] methods = cl.getMethods(); //getMethods() 获取的方法可以获取到父类的方法,比如 java.lang.Object 下定义的各个方法
         Method[] methods1 = cl.getDeclaredMethods(); //getDeclaredMethods() 声明的方法
         Field[] fields = cl.getFields();
@@ -28,6 +29,12 @@ public class ReflectFunc {
             System.out.println(field);
         }
 
+        Method method = cl.getMethod("getAge", Integer.class);
+        Object result = method.invoke(obj, 20);
+
+        System.out.println("invoke调用方法:");
+        System.out.println(result);
+
 
     }
 }
@@ -37,8 +44,12 @@ class A {
     public Integer age;
     public double height;
 
-    private Integer getAge() {
+    public Integer getAge() {
         return this.age;
+    }
+
+    public Integer getAge(Integer age) {
+        return this.age = age;
     }
 
     public Double getHeight() {
