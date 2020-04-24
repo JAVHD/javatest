@@ -33,6 +33,7 @@ public class ReflectFunc {
 }
 
 class A {
+    public static final Integer TYPE = 1;
     public Integer age;
     public double height;
 
