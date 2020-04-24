@@ -10,5 +10,14 @@ public class ClassTest {
 		Class<Integer> cls =  int.class;
 
 		System.out.println(cls.getName());
+
+		A a = new A();
+
+		//a.get
 	}
+}
+
+
+class A {
+
 }

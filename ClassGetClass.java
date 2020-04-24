@@ -1,7 +1,7 @@
 import java.util.ArrayList;
 import java.util.List;
 
-public class javaClass {
+public class ClassGetClass {
     public static void main(String[] args)
     {
 
