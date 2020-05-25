@@ -4,12 +4,13 @@ import java.lang.reflect.InvocationTargetException;
 
 public class ReflectFunc {
     public static void main(String[] args) throws IllegalAccessException, InstantiationException, NoSuchMethodException, InvocationTargetException {
-        Class<?> cl = A.class;
+        Class<A> cl = A.class;
         Object obj = cl.newInstance();
         Method[] methods = cl.getMethods(); //getMethods() 获取的方法可以获取到父类的方法,比如 java.lang.Object 下定义的各个方法
         Method[] methods1 = cl.getDeclaredMethods(); //getDeclaredMethods() 声明的方法
         Field[] fields = cl.getFields();
         Field[] fields1 = cl.getDeclaredFields();
+        //cl.getAnnotation()
 
         System.out.println("获取的方法可以获取到父类的方法:");
         for (Method method : methods) {

@@ -2,7 +2,7 @@
 * @Author: bear
 * @Date:   2019-10-08 15:51:24
 * @Last Modified by:   bear
-* @Last Modified time: 2019-10-10 21:06:22
+* @Last Modified time: 2020-05-04 21:44:08
 */
 
 import java.io.IOException;
@@ -15,7 +15,7 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 
-public class HelloWorldServlet extends HttpServlet {
+public class ServletTest extends HttpServlet {
 
 
 	@Override
@@ -32,8 +32,6 @@ public class HelloWorldServlet extends HttpServlet {
 		printWriter.println(str);
 		printWriter.flush();
 		printWriter.close();
-
-
 
 	}
 

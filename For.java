@@ -2,7 +2,7 @@
 * @Author: bear
 * @Date:   2019-10-24 23:40:37
 * @Last Modified by:   bear
-* @Last Modified time: 2019-10-25 11:49:07
+* @Last Modified time: 2020-05-25 15:45:47
 */
 
 import java.util.ArrayList;
@@ -24,7 +24,6 @@ public class For {
 
 		//String array[] = {"cat", "dog", "bear", "panda"};
 		//int array[] = {99, 100, 101, 102};
-
 
 		for (String a : arrayList
 		    ) {
